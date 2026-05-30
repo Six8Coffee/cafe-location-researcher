@@ -1,5 +1,7 @@
 # Indie Venue Researcher
 
+**[📖 Live demo →](https://six8coffee.github.io/cafe-location-researcher)**
+
 **Most café location tools answer the question. This one asks if you're asking the right one.**
 
 A folder-based AI researcher for independent Australian café operators making location decisions — first venue or expansion. Drop it into a Claude project and get a research partner that investigates what you don't know you don't know, not just what you asked about.
