@@ -1,6 +1,6 @@
-# Indie Venue Researcher
+# Olivia — Café Location Researcher
 
-**[📖 Live demo →](https://six8coffee.github.io/cafe-location-researcher)**
+**[📖 Live demo →](https://olivia.hospotech.io)**
 
 **Most café location tools answer the question. This one asks if you're asking the right one.**
 

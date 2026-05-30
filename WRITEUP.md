@@ -2,7 +2,7 @@
 
 ## What this is
 
-Indie Venue Researcher is a folder-based AI researcher for independent Australian café operators making location decisions — first venue or expansion. It investigates suburb demographics, lease markets, development pipelines, and going concern listings using live web search, and produces structured research outputs that name what the evidence shows, where sources conflict, and precisely what the investigation cannot answer. It's built for the operator who knows they should do more due diligence than they're doing and doesn't know where to start — and for the operator who thinks they've done enough and needs someone to find what they missed.
+Olivia is a folder-based AI researcher for independent Australian café operators making location decisions — first venue or expansion. It investigates suburb demographics, lease markets, development pipelines, and going concern listings using live web search, and produces structured research outputs that name what the evidence shows, where sources conflict, and precisely what the investigation cannot answer. It's built for the operator who knows they should do more due diligence than they're doing and doesn't know where to start — and for the operator who thinks they've done enough and needs someone to find what they missed.
 
 ## The design choice that matters
 
