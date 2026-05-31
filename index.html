@@ -265,6 +265,31 @@
 
     .replay-wrap { text-align: center; margin-top: 18px; }
 
+    /* ── NARRATIVE BLOCK ── */
+    .narrative-block { margin-bottom: 56px; }
+    .narrative-problem,
+    .narrative-solution { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 40px 44px; }
+    .narrative-problem { border-left: 4px solid var(--slate-mid); }
+    .narrative-solution { border-left: 4px solid var(--pink); }
+    .narrative-problem h2,
+    .narrative-solution h2 { margin: 12px 0 18px; }
+    .narrative-problem p,
+    .narrative-solution p { color: var(--body-muted); max-width: 620px; }
+    .narrative-divider { display: flex; justify-content: center; padding: 18px 0; }
+    .narrative-arrow { font-size: 1.6rem; color: var(--pink); line-height: 1; }
+
+    /* ── OUTPUT GRID ── */
+    .output-grid { display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 8px; }
+    .output-item { display: flex; align-items: flex-start; gap: 20px; padding: 18px 24px; background: var(--white); border-bottom: 1px solid var(--border); }
+    .output-item:last-child { border-bottom: none; }
+    .output-num { width: 28px; height: 28px; border-radius: 50%; background: var(--pink); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .output-text strong { font-size: 0.95rem; font-weight: 600; color: var(--slate); display: block; margin-bottom: 2px; }
+    .output-text p { font-size: 0.88rem; color: var(--body-muted); font-weight: 300; line-height: 1.5; margin: 0; }
+
+    @media (max-width: 680px) {
+      .narrative-problem, .narrative-solution { padding: 28px 24px; }
+    }
+
     /* ── STEPS ── */
     .steps { display: flex; flex-direction: column; gap: 24px; max-width: 560px; }
     .step  { display: flex; gap: 18px; align-items: flex-start; }
@@ -329,24 +354,30 @@
 <!-- HOW IT WORKS -->
 <section class="section section-alt">
   <div class="wrap-wide">
-    <div class="section-head">
-      <h2>How Olivia works</h2>
-      <p>Nine files. Four investigation modes. One diagnostic gate that runs before any searching begins.</p>
+
+    <!-- Problem → Solution narrative -->
+    <div class="narrative-block">
+      <div class="narrative-problem">
+        <span class="eyebrow">The situation</span>
+        <h2>You've found the "perfect" location.</h2>
+        <p>The rent seems fair. The foot traffic looks right. Your gut says yes. But before you sign anything, you know you should look harder — at what's been approved to build nearby, whether the lease market supports the asking rent, what comparable businesses actually sold for, whether the suburb's demographics match your concept.</p>
+        <p style="margin-top:16px;">You just don't know where to look. And even if you did — who has time to dig through council DA portals, ABS data, commercial listing databases, and going concern brokers before a decision that could cost you six figures?</p>
+      </div>
+      <div class="narrative-divider">
+        <div class="narrative-arrow">↓</div>
+      </div>
+      <div class="narrative-solution">
+        <span class="eyebrow">What Olivia does</span>
+        <h2>Your research partner, before you sign anything.</h2>
+        <p>Tell Olivia what you're looking at — a suburb, a listing, an address, or no fixed idea yet. She asks a few pointed questions first (the questions determine what to search for and how to read what comes back). Then she searches the sources that actually matter: ABS, commercial lease databases, Bsale, council DA portals, going concern listings.</p>
+        <p style="margin-top:16px;">She comes back with findings, not answers. What the data shows. Where sources conflict. What she couldn't close. What you need to verify on the ground yourself. The decision stays yours — she just makes sure you're making it with the right information.</p>
+      </div>
     </div>
 
-    <div class="file-tree">
-<span class="tf">📁 olivia/</span>
-├── <span class="tf2">identity.md</span>             <span class="td">← who Olivia is + founder's lived position</span>
-├── <span class="tf2">rules.md</span>                <span class="td">← diagnostic gate · investigation protocol · output format</span>
-├── <span class="tf2">examples.md</span>             <span class="td">← three complete investigations, one per mode</span>
-├── <span class="tf2">WRITEUP.md</span>              <span class="td">← design rationale</span>
-├── <span class="tf2">README.md</span>               <span class="td">← setup in 60 seconds</span>
-└── <span class="tf">📁 reference/</span>
-    ├── <span class="tf2">investigation-types.md</span>  <span class="td">← 4 modes → source routing</span>
-    ├── <span class="tf2">source-guide.md</span>         <span class="td">← what each source is for + reliability note</span>
-    ├── <span class="tf2">domain-concepts.md</span>      <span class="td">← lease + planning vocabulary</span>
-    └── <span class="tf2">regional-adjustment.md</span>  <span class="td">← visitor economy framework (Yass NSW)</span></div>
-
+    <!-- Investigation modes -->
+    <div class="modes-section-head">
+      <h3 style="font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--body-muted);margin-bottom:20px;">Four types of investigation</h3>
+    </div>
     <div class="modes-grid">
       <div class="mode-card">
         <div class="mode-icon">🏘️</div>
@@ -369,6 +400,49 @@
         <p>No location yet — calibrated criteria to scope where opportunity actually exists.</p>
       </div>
     </div>
+
+    <!-- Output structure -->
+    <div class="output-section-head">
+      <h3 style="font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--body-muted);margin:48px 0 20px;">Every investigation returns the same structure</h3>
+    </div>
+    <div class="output-grid">
+      <div class="output-item">
+        <div class="output-num">1</div>
+        <div class="output-text">
+          <strong>What the sources show</strong>
+          <p>Synthesised across sources, not listed one by one</p>
+        </div>
+      </div>
+      <div class="output-item">
+        <div class="output-num">2</div>
+        <div class="output-text">
+          <strong>Where sources conflict</strong>
+          <p>Named explicitly — not buried in the summary</p>
+        </div>
+      </div>
+      <div class="output-item">
+        <div class="output-num">3</div>
+        <div class="output-text">
+          <strong>Open questions</strong>
+          <p>What the investigation raised but couldn't close</p>
+        </div>
+      </div>
+      <div class="output-item">
+        <div class="output-num">4</div>
+        <div class="output-text">
+          <strong>What Olivia cannot tell you</strong>
+          <p>Specific steps for what to verify on the ground</p>
+        </div>
+      </div>
+      <div class="output-item">
+        <div class="output-num">5</div>
+        <div class="output-text">
+          <strong>Sources log</strong>
+          <p>Every source used, when accessed, and its reliability limitation</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

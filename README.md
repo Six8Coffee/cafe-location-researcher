@@ -27,6 +27,24 @@ The researcher will ask a few questions before searching — that's intentional.
 
 ---
 
+## What's in the folder
+
+```
+olivia/
+├── identity.md              ← who Olivia is + founder's lived position
+├── rules.md                 ← diagnostic gate · investigation protocol · output format
+├── examples.md              ← three complete investigations, one per mode
+├── WRITEUP.md               ← design rationale
+├── README.md                ← this file
+└── reference/
+    ├── investigation-types.md   ← 4 modes → source routing
+    ├── source-guide.md          ← what each source is for + reliability note
+    ├── domain-concepts.md       ← lease + planning vocabulary
+    └── regional-adjustment.md   ← visitor economy framework (Yass NSW)
+```
+
+---
+
 ## What to expect
 
 The researcher will not immediately produce a summary. It will ask what type of decision you're making, what your concept is, and what you've already looked at. Then it searches.
@@ -52,4 +70,4 @@ Not useful for: operators who want someone to make the decision for them, or who
 
 ## Built by
 
-Daniel Neuhaus — café owner and roaster, Trader & Co., Yass NSW. Built this because the standard location research tools assume metro. Most of the decisions worth making are regional.
+Daniel Neuhaus — café owner and roaster, Trader & Co. | Six8 Coffee Roasters, Yass NSW. Built this because the standard location research tools assume metro. Most of the decisions worth making are regional.
